@@ -36,24 +36,28 @@
 
         .istfg {
             padding: 10px 20px;
-            font-size: 16px;
+            font-size: 14px;
+            font-family: Verdana, sans-serif;
             cursor: pointer;
-            background-color: rgba(47, 49, 54, 0.5);
-            color: white;
-            border: none;
-            border-radius: 5px;
+            background: linear-gradient(to bottom, #c0c0c0 0%, #a0a0a0 100%);
+            color: black;
+            border: 1px solid #707070;
+            border-radius: 0;
             position: fixed;
             bottom: 70px;
             left: 50%;
             transform: translateX(-50%);
             z-index: 2;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-            transition: transform 0.2s ease, background-color 0.2s ease;
+            box-shadow: inset 1px 1px 0px #ffffff, inset -1px -1px 0px #8a8a8a;
+            transition: background-color 0.2s ease, filter 0.2s ease; 
+            text-transform: uppercase;
+            width: 150px; 
+            height: 40px; 
         }
 
         .istfg:hover {
-            transform: translateX(-50%) scale(1.1);
-            background-color: rgba(47, 49, 54, 1);
+            background-color: #d0d0d0;
+            filter: brightness(1.1);
         }
 
         .istfg:active {
@@ -131,7 +135,7 @@
             height: 40px; 
             margin-right: 10px; 
         }
-
+        
     </style>
 </head>
 <body>
