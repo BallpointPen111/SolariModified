@@ -247,6 +247,14 @@
             const badgeNotification = document.getElementById("badgeNotification");
             badgeNotification.style.display = "flex"; 
             badgeNotification.style.right = "20px"; 
+            setTimeout(() => {
+                badgeNotification.style.right = "-300px"; 
+            }, 5000);
+        }
+
+        function hideBadge() {
+            const badgeNotification = document.getElementById("badgeNotification");
+            badgeNotification.style.right = "-300px"; 
         }
 
         document.getElementById("badgeNotification").addEventListener("click", hideBadge);
